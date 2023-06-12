@@ -18,7 +18,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
       e.preventDefault()
       try {
-        const res = await axios.post("/api/v1/auth/login", {
+        const res = await axios.post("https://e-commerce-server-6yc5.onrender.com/api/v1/auth/login", {
           email,
           password,
         });
